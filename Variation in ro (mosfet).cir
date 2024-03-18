@@ -1,0 +1,13 @@
+* D:\Anu\CMOS\Variation in ro (mosfet).asc
+*Variation in ro (output resistance) - Analog Mosfet exercise
+M1 D G 0 N001 NMOS1
+VG G 0 2.5
+VDD D 0
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Anumol\Documents\LTspiceXVII\lib\cmp\standard.mos
+
+.model nmos1 nmos (vto=0.7V L=2u W=10u lambda=0.0 kp=50u gamma=0.0 )
+.dc VDD 0 5 0.1
+.backanno
+.end
